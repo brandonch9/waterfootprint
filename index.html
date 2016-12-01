@@ -741,8 +741,8 @@ products</a>
                     // var data = $('.tab__item--left').hasClass('active') ? foodgroups : dataset;
 
 
-                      d3.csv("foodgroups.csv", function(error, data) {
-                          var foodgroups = data.map(function(d) { return [ +d["gal/calorie"], +d["gal/lb"], +d["lb/capita"], d["name"], d["group"] ]; });
+//                       d3.csv("foodgroups.csv", function(error, data) {
+//                           var foodgroups = data.map(function(d) { return [ +d["gal/calorie"], +d["gal/lb"], +d["lb/capita"], d["name"], d["group"] ]; });
                         
                           var data = $('.tab__item--left').hasClass('active') ? foodgroups : dataset;
                     
@@ -905,7 +905,7 @@ products</a>
                         .duration(100)
                         .call(yAxis);
 
-                })
+//                 })
             
         });
 });
